@@ -202,21 +202,16 @@ margin: 0 20px;
     border-radius: 10px;
     width: 370px;
     height: 180px;
+    margin-bottom: 66px;
 }
 
-.body__content {
+.body__text-item {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 64px;
 }
-
-.body__content-info {
-    width: 370px;
-}
-
-.body__img {
-    display: inline-flex;
+.body__desk {
+    margin-left: 30px;
+    text-align: left;
+    position: relative;
 }
 
 .body__name {
@@ -225,9 +220,10 @@ margin: 0 20px;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
-    display: inline-flex;
     text-transform: capitalize;
     color: #000000;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .body__work {
@@ -237,7 +233,10 @@ margin: 0 20px;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    margin-left: 100px;
+    text-align: left;
+}
+.body__icon {
+    margin-left: 15px;
 }
 
 .promo {
