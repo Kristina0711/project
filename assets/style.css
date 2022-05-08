@@ -58,9 +58,7 @@ html {
 .media__icon-item {
 justify-content: space-around;
 margin: 0 20px;
-
 }
-
 
 .media__icon-logo {
     justify-content: space-around;
@@ -113,7 +111,7 @@ margin: 0 20px;
 }
 
 .about__column {
-    flex: 0 0 33.333%;
+    flex: 33%;
     font-size: 0;
 }
 
@@ -127,6 +125,7 @@ margin: 0 20px;
     justify-content: center;
     text-align: center;
     margin-bottom: 39px;
+    margin-left: 150px;
 }
 
 .item-info__title {
@@ -190,7 +189,6 @@ margin: 0 20px;
 .body__row {
     display: flex;
     margin: 25px -15px;
-
 }
 
 .body__text-info {
@@ -216,7 +214,6 @@ margin: 0 20px;
 
 .body__content-info {
     width: 370px;
-
 }
 
 .body__img {
@@ -244,14 +241,13 @@ margin: 0 20px;
     margin-left: 100px;
 }
 
-
 .promo {
     padding-top: 50px;
     padding-bottom: 50px;
     /* min-height: 100vh; */
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
-    background-image: url(/assets/img/image.png);
+    background-image: url(./assets/img/image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -264,7 +260,6 @@ margin: 0 20px;
     align-items: center;
     text-transform: uppercase;
     padding-top: 75px;
-
 }
 
 .promo-title::after {
@@ -274,7 +269,6 @@ margin: 0 20px;
     height: 1px;
     background-color: #FFFFFF;
     margin: 75px auto;
-
 }
 
 .promo-subtitle {
@@ -296,5 +290,4 @@ margin: 0 20px;
     color: inherit;
     padding: 29px 140px;
     border: 2px solid #FFFFFF;
-
 }
