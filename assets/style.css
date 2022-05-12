@@ -10,22 +10,20 @@ html {
 }
 
 .container {
-    max-width: 1202px;
+    max-width: 1171px;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
-    height: 442px;
+    /* height: 442px; */
 }
 
 .media {
     background: #F8EFEF;
+    padding: 18px 0 ;
 }
 
 .media__body {
-    max-width: 1170px;
-    margin: 0 auto;
     display: flex;
-    height: 140px;
     justify-content: center;
     align-items: center;
 }
@@ -34,7 +32,6 @@ html {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
-    /* display: flex; */
     align-items: center;
     text-transform: capitalize;
     color: #333333;
@@ -63,19 +60,13 @@ margin: 0 20px;
 .media__icon-logo {
     justify-content: space-around;
 }
-
-.info__body {
-    max-width: 1170px;
-    margin: 0px auto;
+.info {
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
-.info__header {
-    margin-bottom: 110px;
-}
-
-.info__title {
-    margin-top: 57px;
-    margin-bottom: px;
+.header {
+    margin-bottom: 66px;
 }
 
 .title {
@@ -86,6 +77,9 @@ margin: 0 20px;
     color: #000000;
     position: relative;
     text-align: center;
+    /* padding: 45px; */
+    padding-top: 20px;
+    text-transform: uppercase;
 }
 
 .title::after {
@@ -93,17 +87,18 @@ margin: 0 20px;
     display: block;
     width: 170px;
     height: 1px;
-    background-color: #000000;
+    background-color: #EC7979;
     margin: 40px auto;
 }
 
-.info__text {
+.text {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     align-items: center;
     text-align: center;
     color: #86878B;
+    
 }
 
 .about__row {
@@ -147,47 +142,12 @@ margin: 0 20px;
 
 .body {
     margin-top: 50px;
-}
-
-.body__info {
-    max-width: 1171px;
-    margin: 0px auto;
-    margin-top: 50px;
-}
-
-.body__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.body__title::after {
-    content: "";
-    display: block;
-    width: 170px;
-    height: 1px;
-    background-color: #000000;
-    margin: 40px auto;
-}
-
-.body__text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    position: relative;
-    text-align: center;
-    color: #86878B;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .body__row {
     display: flex;
-    margin: 25px -15px;
+    margin: 0 -16px;
 }
 
 .body__text-info {
@@ -196,15 +156,17 @@ margin: 0 20px;
     line-height: 21px;
     text-align: center;
     color: #86878B;
-    margin: 15px;
     padding: 38px;
     background: #E2E2E2;
     border-radius: 10px;
-    width: 370px;
-    height: 180px;
     margin-bottom: 66px;
 }
 
+.body__column {
+    width: calc(100% / 3 - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+}
 .body__text-item {
     display: flex;
 }
@@ -242,40 +204,32 @@ margin: 0 20px;
 .promo {
     padding-top: 50px;
     padding-bottom: 50px;
-    /* min-height: 100vh; */
     text-align: center;
-    /* background: rgba(0, 0, 0, 0.5); */
     background-image: url("./img/image.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    z-index: 3;
 }
-
-.promo-title {
-    font-weight: 400;
-    font-size: 36px;
-    font-style: normal;
-    align-items: center;
-    text-transform: uppercase;
-    padding-top: 75px;
+.promo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/assets/img/bg.png");  
+    z-index: -1;
+} 
+.header_light .title {
+color: rgb(255, 255, 255);
 }
-
-.promo-title::after {
-    content: "";
-    display: block;
-    width: 170px;
-    height: 1px;
-    background-color: #FFFFFF;
-    margin: 75px auto;
+.header_light .title::after {
+    background-color: #ffffff;
 }
-
-.promo-subtitle {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    margin-top: -35px;
-    margin-bottom: 73px;
-    text-align: center;
+.header_light .text {
+    color: rgb(255, 255, 255);
 }
 
 .promo-link {
