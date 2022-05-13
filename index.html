@@ -151,24 +151,44 @@
     </section> 
 <section class="contact-us">
     <div class="container">
-        <section class="section-head">
+        <div class="section-head">
             <div class="section-head__title">contact us</div>
             <div class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        </section>
-    <div class="contact-us__card">
-<div class="contact-us__card-info">
-    <input type="text" name="userName" placeholder="Name">
-    <input type="email" name="userEmail" placeholder="Email">
-    <input type="password" name="userPassword" placeholder="Password">
+        </div>
+    <div class="contact-us__row">
+<div class="contact-us__card-column">
+    <div class="contact-us__card-info">
+    <input class="contact-us__card-item" type="text" name="userName" placeholder="Name">
+    <input class="contact-us__card-item" type="email" name="userEmail" placeholder="Email">
+    <input class="contact-us__card-item" type="password" name="userPassword" placeholder="Password">
 </div>
-<div class="contact-us__card-message">
-
+</div>
+<div class="contact-us__card-column">
+    <div class="contact-us__card-message">
+    <input class="contact-us__card-text" type="textarea" name="userText" placeholder="Message"> 
+</div>
 </div>
     </div>
-    <a href="" class="contact-us__send">Send Message</a>
+<div class="contact-us__send">
+    <a href="" class="contact-us__send-link">Send Message</a>
+</div>
+</section>
+<section class="footer">
+    <div class="container">
+        <nav class="footer__nav">
+            <ul class="footer__icon">
+                <li class="footer__icon-logo-item"><a href=""><img class="footer__icon-logo-link" src="./assets/img/media/Vector.png" alt="logo"></a></li>
+                <li class="footer__icon-logo-item"><a href=""><img class="footer__icon-logo-link" src="./assets/img/media/02.png" alt="logo"></a></li>
+                <li class="footer__icon-logo-item"><a href=""><img class="footer__icon-logo-link" src="./assets/img/media/03.png" alt="logo"></a></li>
+                <li class="footer__icon-logo-item"><a href=""><img class="footer__icon-logo-link" src="./assets/img/media/04.png" alt="logo"></a></li>
+                <li class="footer__icon-logo-item"><a href=""><img class="footer__icon-logo-link" src="./assets/img/media/05.png" alt="logo"></a></li>
+                <li class="footer__icon-logo-item"><a href=""><img class="footer__icon-logo-link" src="./assets/img/media/06.png" alt="logo"></a></li>
+                <li class="footer__icon-logo-item"><a href=""><img class="footer__icon-logo-link" src="./assets/img/media/07.png" alt="logo"></a></li>
+            </ul>
+        </nav>
+        <p class="footer__text">© 2015 Axure Themes</p>
     </div>
 </section>
-
 
 
 </body>
