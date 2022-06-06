@@ -160,7 +160,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/assets/img/bg.png");
+    background-image: url("./assets/img/bg.png");
     z-index: -1;
 }
 
@@ -854,7 +854,7 @@ i {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/assets/img/bg.png");
+    background-image: url("./assets/img/bg.png");
     z-index: -1;
 }
 
