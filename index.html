@@ -22,16 +22,17 @@
     <nav class="header__nav">
       <ul class="header__menu">
         <li class="header__menu-item  header__menu-item_has-child">
-          <a class="header__menu-link fa-angle-down" href="" >featurest &#9947;</a>
+          <a class="header__menu-link" href="" >featurest</a>
         
         <ul class="header__submenu">
-          <li class="header__submenu-item header__menu-item_has-child"><a href="" class="header__sub-menu-link">Company&#10095;</a>
+          <li class="header__submenu-item second-header__menu-item_has-child">
+              <a href="" class="header__sub-menu-link">Company&#10095;</a>
         
-            <ul class="header__submenu">
-                <li class="header__submenu-item"><a href="" class="header__sub-menu-link">Company</a></li>
-                <li class="header__submenu-item"><a href="" class="header__sub-menu-link">Company</a></li>
-                <li class="header__submenu-item"><a href="" class="header__sub-menu-link">Company</a></li>
-                <li class="header__submenu-item"><a href="" class="header__sub-menu-link">Company</a></li>
+            <ul class="second-header__submenu">
+                <li class="second-header__submenu-item"><a href="" class="second-header__sub-menu-link">Company</a></li>
+                <li class="second-header__submenu-item"><a href="" class="second-header__sub-menu-link">Company</a></li>
+                <li class="second-header__submenu-item"><a href="" class="second-header__sub-menu-link">Company</a></li>
+                <li class="second-header__submenu-item"><a href="" class="second-header__sub-menu-link">Company</a></li>
       
               </ul>
         </li>
@@ -61,16 +62,16 @@
                     <div>
                     <h1 class="header__content-title">MODERN AXURE TEMPLATE <br> FOR BEAUTIFUL  PROTOTYPES</h1>
                     <p class="header__content-subtitle">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
-                    <button id="myBtn" class="header__content-link" href= "">Download</button>
+                    <button id="myBtn" class="header__content-link outlined-btn" href= "">Download</button>
                     <div id="myModal" class="modal">
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <fieldset class="modal__form">
-                                <legend>Регистрация:</legend>
-                                <input type="text" name="userName" placeholder="Введите ваше имя">
-                                <input type="email" name="userEmail" placeholder="Email">
-                                <input type="phone" name="userPhone" placeholder="Номер телефона">
-                                <button type="submit">Отправить</button>
+                                <legend class="modal__form-title">Регистрация:</legend>
+                                <input class="modal__form-input input"  type="text" name="userName" placeholder="Введите ваше имя">
+                                <input class="modal__form-input input" type="email" name="userEmail" placeholder="Email">
+                                <input class="modal__form-input input" type="phone" name="userPhone" placeholder="Номер телефона">
+                                <button class="modal__form-btn " type="submit">Отправить</button>
                             </fieldset>
                         </div>
                     </div>
@@ -80,9 +81,9 @@
                         <fieldset class="header__content-form-group">
                             <div class="header__content-form-group-bg">
                                 <legend class="header__content-form-title">Try Your <span>FREE</span>  Trial Today</legend>
-                        <input class="header__content-form-name" type="text" name="userName" placeholder="Name">
-                        <input class="header__content-form-name" type="email" name="userEmail" placeholder="Email">
-                        <input class="header__content-form-name" type="password" name="userPassword" placeholder="Password">
+                        <input class="header__content-form-name input" type="text" name="userName" placeholder="Name">
+                        <input class="header__content-form-name input" type="email" name="userEmail" placeholder="Email">
+                        <input class="header__content-form-name input" type="password" name="userPassword" placeholder="Password">
                             </div>
                         
                         <input class="header__content-btn" type="submit" value="Get Started"></input>
@@ -131,10 +132,14 @@
 <!-- TABS -->
 <section class="tabs">
     <div class="container">
-      <button class="tabs__link tabs__link_active" >Tab 1</button>
-      <button class="tabs__link" >Tab 2</button>
-      <button class="tabs__link" >Tab 3</button>
-      <div  class="tabs__content">
+        <div class="tabs__nav">
+    <button class="tabs__link tabs__link_active" onclick="openTab(event, 'tab-1')" id="defaultOpen" >Tab 1</button>
+    <button class="tabs__link" onclick="openTab(event, 'tab-2')" >Tab 2</button>
+    <button class="tabs__link" onclick="openTab(event, 'tab-3')">Tab 3</button>
+        </div>
+      <!-- <div class="tabs__item"> -->
+      <div id="tab-1" class="tabs__content">
+          <div class="tabs__row"> 
         <div class="tabs__info">
           <p class="tabs__title">Tabs with soft transitioning effect.</p>
           <p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
@@ -145,13 +150,52 @@
           <br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br> 
           bibendum laoreet.</p>
-          <a href="#" class="tabs__btn">Download</a>
+          <a href="#" class="tabs__btn prime-btn">Download</a>
         </div>
         <div class="tabs__image">
             <img class="tabs__img" src="./assets/img/tabs/tabsimg.jpg" alt="liberty" >
         </div>
+    </div>
       </div>
-      
+      <div id="tab-2" class="tabs__content">
+          <div class="tabs__row">
+        <div class="tabs__info">
+          <p class="tabs__title">Tabs with soft transitioning effect.</p>
+          <p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aenean euismod <br>
+          bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
+          justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+          penatibus et magnis dis parturient montes. 
+          <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br> 
+          bibendum laoreet.</p>
+          <a href="#" class="tabs__btn prime-btn">Download</a>
+        </div>
+        <div class="tabs__image">
+            <img class="tabs__img" src="./assets/img/tabs/tab2.jpg" alt="liberty" >
+        </div>
+    </div>
+      </div>
+      <div id="tab-3" class="tabs__content">
+          <div class="tabs__row">
+        <div class="tabs__info">
+          <p class="tabs__title">Tabs with soft transitioning effect.</p>
+          <p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
+          bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
+          justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+          penatibus et magnis dis parturient montes. 
+          <br>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br> 
+          bibendum laoreet.</p>
+          <a href="#" class="tabs__btn prime-btn">Download</a>
+        </div>
+        <div class="tabs__image">
+            <img class="tabs__img" src="./assets/img/tabs/tab3.jpg" alt="liberty" >
+        </div>
+    </div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -320,7 +364,7 @@
             <h1 class="section-head__title">STYLISH AXURE DESIGN</h1>
             <p class="section-head__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
         </div>
-            <a class="promo-link" href="/download">Download</a>
+            <a class="promo-link outlined-btn" href="/download">Download</a>
         </div>
     </section> 
 
@@ -334,21 +378,21 @@
         </div>
 
     <div class="row">
-<div class="contact-us__card-column">
+<div class="contact-us__card-column col-6">
     <div class="contact-us__card-info">
     <input class="contact-us__card-item" type="text" name="userName" placeholder="Name">
     <input class="contact-us__card-item" type="email" name="userEmail" placeholder="Email">
     <input class="contact-us__card-item" type="password" name="userPassword" placeholder="Password">
 </div>
 </div>
-<div class="contact-us__card-column">
+<div class="contact-us__card-column col-6">
     <div class="contact-us__card-message">
 <textarea class="contact-us__card-item contact-us__card-text" name="userText" id="#" placeholder="Message" cols="70" rows="13"></textarea>
 </div>
 </div>
     </div>
 <div class="contact-us__send">
-    <a href="" class="contact-us__send-link">Send Message</a>
+    <a href="" class="contact-us__send-link prime-btn">Send Message</a>
 </div>
 </div>
 </section>

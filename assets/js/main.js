@@ -34,3 +34,21 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+function openTab(evt,tabsbtn) {
+  var i, tabs__content, tabs__link;
+  tabs__content = document.getElementsByClassName("tabs__content");
+  for (i = 0; i < tabs__content.length; i++) {
+      tabs__content[i].style.display = "none";
+  }
+  tabs__link = document.getElementsByClassName("tabs__link");
+  for (i = 0; i < tabs__link.length; i++) {
+      tabs__link[i].className = tabs__link[i].className.replace(" active", "");
+  }
+  document.getElementById(tabsbtn).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
