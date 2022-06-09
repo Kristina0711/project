@@ -985,6 +985,7 @@ input {
 
 .contact-us__card-column {
     margin-bottom: 50px;
+    max-width: 100%;
 }
 
 
@@ -992,7 +993,8 @@ input {
 .contact-us__card-info {
     display: flex;
     flex-direction: column;
-
+    max-width: 100%;
+    
 }
 
 .contact-us__card-item {
@@ -1004,12 +1006,24 @@ input {
     color: #BDBDBD;
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    padding-top: 80px;
+    padding-top: 25px;
     padding-bottom: 16px;
+    max-width: 571px;
+}
+.contact-us__card-item:first-child {
+    padding-top: 0;
 }
 
 .contact-us__card-text {
-    min-width: 100%;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    color: #BDBDBD;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    max-width: 571px;
     
 }
 .contact-us__card-message {
