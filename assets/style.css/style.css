@@ -417,7 +417,7 @@ span {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("./assets/img/bg.png");
+    background-image: url("../assets/img/bg.png");
     z-index: -1;
 }
 
@@ -732,6 +732,7 @@ span {
 }
 @media screen and (max-width: 768px) {
     .tabs__info {
+    padding-left: 17px;
       align-self: center;
     }
 }
@@ -785,6 +786,7 @@ span {
 .tabs__btn-wrap {
     display: flex;
     justify-content: center;
+    align-items: center;
 
 }
 .tabs__btn {
@@ -1095,7 +1097,7 @@ span {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    background-image: url("");
+    background-image: url("/assets/img/image.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
