@@ -44,10 +44,10 @@ function openTab(evt,tabsbtn) {
   }
   tabs__link = document.getElementsByClassName("tabs__link");
   for (i = 0; i < tabs__link.length; i++) {
-      tabs__link[i].className = tabs__link[i].className.replace(" active", "");
+      tabs__link[i].className = tabs__link[i].className.replace(" tabs__link_active", "");
   }
   document.getElementById(tabsbtn).style.display = "block";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.className += " tabs__link_active";
 }
 
 // Get the element with id="defaultOpen" and click on it

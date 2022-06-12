@@ -5,40 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-<header class="header">
+    <!-- HEADER -->
+ <header class="header">
   <div class="container">
     <div class="header__inner">
     <a href="" class="header__logo-link">
-      <img src="./assets/img/header/AXIT.png" alt="logo">
-      <img src="./assets/img/header/AXIT2.png" alt="logo">
+      <img src="./assets/img/header/logoh.png" alt="logo">
     </a>
     <nav class="header__nav">
       <ul class="header__menu">
         <li class="header__menu-item  header__menu-item_has-child">
-          <a class="header__menu-link" href="" >featurest</a>
+          <a class="header__menu-link" href="" >featurest	
+            &#5121;</a>
         
         <ul class="header__submenu">
-          <li class="header__submenu-item second-header__menu-item_has-child">
-              <a href="" class="header__sub-menu-link">Company&#10095;</a>
+          <li class="header__submenu-item header__menu-item_has-child">
+              <a href="" class="header__submenu-link">Company&#10095;</a>
         
-            <ul class="second-header__submenu">
-                <li class="second-header__submenu-item"><a href="" class="second-header__sub-menu-link">Company</a></li>
-                <li class="second-header__submenu-item"><a href="" class="second-header__sub-menu-link">Company</a></li>
-                <li class="second-header__submenu-item"><a href="" class="second-header__sub-menu-link">Company</a></li>
-                <li class="second-header__submenu-item"><a href="" class="second-header__sub-menu-link">Company</a></li>
+            <ul class="header__submenu-sub">
+                <li class="header__submenu-sub-item"><a href="" class="header__submenu-link">Company</a></li>
+                <li class="header__submenu-sub-item"><a href="" class="header__submenu-link">Company</a></li>
+                <li class="header__submenu-sub-item"><a href="" class="header__submenu-link">Company</a></li>
+                <li class="header__submenu-sub-item"><a href="" class="header__submenu-link">Company</a></li>
       
               </ul>
         </li>
-          <li class="header__submenu-item"><a href="" class="header__sub-menu-link">Company</a></li>
-          <li class="header__submenu-item"><a href="" class="header__sub-menu-link">Company</a></li>
-          <li class="header__submenu-item"><a href="" class="header__sub-menu-link">Company</a></li>
+          <li class="header__submenu-item"><a href="" class="header__submenu-link">Company</a></li>
+          <li class="header__submenu-item"><a href="" class="header__submenu-link">Company</a></li>
+          <li class="header__submenu-item"><a href="" class="header__submenu-link">Company</a></li>
 
         </ul></li>
         <li class="header__menu-item header__menu-item_active"><a class="header__menu-link" href="">About</a></li>
@@ -51,63 +52,57 @@
   </div>
 </header> 
 
-        <section class="header__content">
+<!-- PROMO -->
+        <section class="promo">
             <div class="container">
-                <div class="header__content-inner">
-                    <div class="header__content-logo"> 
-                        <a class="content__logo-link" href="#">
-                        <img class="content__logo-img" src="./assets/img/header/AXITcont.png" alt="logo">
-                        <img class="content__logo-img" src="./assets/img/header/AXITcont2.png" alt="logo">
+                <div class="promo__inner row">
+                    <div class="promo__logo col-7 col-md-12"> 
+                        <a class="promo__logo-link" href="#">
+                        <img class="promo__logo-img" src="./assets/img/header/logotip.png" alt="logo">
                         </a> 
-                    <div>
-                    <h1 class="header__content-title">MODERN AXURE TEMPLATE <br> FOR BEAUTIFUL  PROTOTYPES</h1>
-                    <p class="header__content-subtitle">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
-                    <button id="myBtn" class="header__content-link outlined-btn" href= "">Download</button>
-                    <div id="myModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <fieldset class="modal__form">
-                                <legend class="modal__form-title">Регистрация:</legend>
-                                <input class="modal__form-input input"  type="text" name="userName" placeholder="Введите ваше имя">
-                                <input class="modal__form-input input" type="email" name="userEmail" placeholder="Email">
-                                <input class="modal__form-input input" type="phone" name="userPhone" placeholder="Номер телефона">
-                                <button class="modal__form-btn " type="submit">Отправить</button>
-                            </fieldset>
-                        </div>
+                    <h1 class="promo__title">MODERN AXURE TEMPLATE <br> FOR BEAUTIFUL  PROTOTYPES</h1>
+                    <p class="promo__subtitle">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
+                    <div class="promo__btn-wrap">
+                        <button id="myBtn" class="promo__btn outlined-btn" href= "">Download</button>
                     </div>
+                   
+
+                
                 </div>
-                </div>
-                    <form class="header__content-form">
-                        <fieldset class="header__content-form-group">
-                            <div class="header__content-form-group-bg">
-                                <legend class="header__content-form-title">Try Your <span>FREE</span>  Trial Today</legend>
-                        <input class="header__content-form-name input" type="text" name="userName" placeholder="Name">
-                        <input class="header__content-form-name input" type="email" name="userEmail" placeholder="Email">
-                        <input class="header__content-form-name input" type="password" name="userPassword" placeholder="Password">
-                            </div>
-                        
-                        <input class="header__content-btn" type="submit" value="Get Started"></input>
+                  <div class="promo__form-wrapper col-5 col-md-12">
+                    <form class="promo-form form">
+                        <fieldset class="promo__form-group form-group">
+                           
+                         <legend class="promo__form-title form-title">Try Your <span>FREE</span>  Trial Today</legend>
+                        <div class="promo__form-items form-items">
+                         <input class="promo__form-input form-input" type="text" name="userName" placeholder="Name">
+                        </div>
+                        <div class="promo__form-items form-items">
+                         <input class="promo__form-input form-input" type="email" name="userEmail" placeholder="Email">
+                        </div>
+                        <div class="promo__form-items form-items">
+                         <input class="promo__form-input form-input" type="password" name="userPassword" placeholder="Password">
+                        </div>
+                         <input class="promo__forms-btn prime-btn" type="submit" value="Get Started"></input>        
                     </fieldset>
-                    <!-- <div class="header_content-btn"> -->
-                       
                     </form>
                 </div>
-                
+                </div>
             </div>
         </section>
         </div> 
        
 
         <!-- MEDIA -->
-<section class="media">
+ <section class="media"> 
 <div class="container">
-    <div class="media__body">
-        <section class="media__info">
+    <div class=" media__row row">
+        <div class="media__info col-5 col-md-12">
             <div class="media__title">Social Media</div>
             <div class="media__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
                 Aenean euismod bibendum laoreet.</div>
-        </section>
-        <div class="media__icon">
+        </div>
+        <div class="media__icon col-7 col-md-12">
             <div class="media__icon-item">
                 <a href=""><img class="media__icon-logo" src="./assets/img/media/Vector.png" alt="logo"></a>
             </div>
@@ -137,10 +132,9 @@
     <button class="tabs__link" onclick="openTab(event, 'tab-2')" >Tab 2</button>
     <button class="tabs__link" onclick="openTab(event, 'tab-3')">Tab 3</button>
         </div>
-      <!-- <div class="tabs__item"> -->
       <div id="tab-1" class="tabs__content">
-          <div class="tabs__row"> 
-        <div class="tabs__info">
+          <div class="tabs__row row"> 
+        <div class="tabs__info col-7 col-md-12">
           <p class="tabs__title">Tabs with soft transitioning effect.</p>
           <p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
           bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
@@ -150,16 +144,19 @@
           <br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br> 
           bibendum laoreet.</p>
-          <a href="#" class="tabs__btn prime-btn">Download</a>
+          <div class="tabs__btn-wrap">
+            <button href="#" class="tabs__btn prime-btn">Download</button>
+          </div>
+          
         </div>
-        <div class="tabs__image">
+        <div class="tabs__image-wrap col-5">
             <img class="tabs__img" src="./assets/img/tabs/tabsimg.jpg" alt="liberty" >
         </div>
     </div>
       </div>
       <div id="tab-2" class="tabs__content">
-          <div class="tabs__row">
-        <div class="tabs__info">
+          <div class="tabs__row row">
+        <div class="tabs__info col-7 col-md-12">
           <p class="tabs__title">Tabs with soft transitioning effect.</p>
           <p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aenean euismod <br>
           bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
@@ -169,16 +166,16 @@
           <br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br> 
           bibendum laoreet.</p>
-          <a href="#" class="tabs__btn prime-btn">Download</a>
+          <button href="#" class="tabs__btn prime-btn">Download</button>
         </div>
-        <div class="tabs__image">
+        <div class="tabs__image-wrap col-5">
             <img class="tabs__img" src="./assets/img/tabs/tab2.jpg" alt="liberty" >
         </div>
     </div>
       </div>
       <div id="tab-3" class="tabs__content">
-          <div class="tabs__row">
-        <div class="tabs__info">
+          <div class="tabs__row row">
+        <div class="tabs__info col-7 col-md-12">
           <p class="tabs__title">Tabs with soft transitioning effect.</p>
           <p class="tabs__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>
           bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>
@@ -188,9 +185,9 @@
           <br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br> 
           bibendum laoreet.</p>
-          <a href="#" class="tabs__btn prime-btn">Download</a>
+          <button href="#" class="tabs__btn prime-btn">Download</button>
         </div>
-        <div class="tabs__image">
+        <div class="tabs__image-wrap col-5">
             <img class="tabs__img" src="./assets/img/tabs/tab3.jpg" alt="liberty" >
         </div>
     </div>
@@ -199,17 +196,16 @@
     </div>
   </section>
 
-</div>
-</section>
+
 <!-- INFO -->
-<section class="info">
+ <section class="info">
     <div class="container">
         <div class="info__head section-head">
             <div class="section-head__title">WHY THIS IS AWESOME</div>
             <div class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div>
-        <div class="row">
-            <div class="info__column col-4">
+        <div class="info__row row">
+            <div class="info__card col-4 col-md-12">
                 <div class="info__item">
                     <div class="info__item-icon">
                     <img src="./assets/img/info/01.png" alt="icon">
@@ -219,7 +215,7 @@
                         elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</div>
                 </div>
             </div>
-            <div class="info__column col-4">
+            <div class="info__card col-4 col-md-12">
                 <div class="info__item">
                     <div class="info__item-icon">
                     <img src="./assets/img/info/02.png" alt="icon">
@@ -229,7 +225,7 @@
                         elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</div>
                 </div>
             </div>
-            <div class="info__column col-4">
+            <div class="info__card col-4 col-md-12">
                 <div class="info__item">
                     <div class="info__item-icon">
                     <img src="./assets/img/info/03.png" alt="icon">
@@ -241,19 +237,21 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
+
+
 <!-- PRICING -->
-<section class="pricing">
+ <section class="pricing">
     <div class="container">
         <div class=" pricing__head section-head">
             <div class="section-head__title">pricing options</div>
             <div class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div>
         <div class="row">
-            <div class="pricing__column col-4">
+            <div class="pricing__card col-4 col-md-12">
                 <div class="pricing__name">Basic</div>
                 <div class="pricing__price">10$</div>
-                <div class="pricing__for">Free for life</div>
+                <div class="pricing__desck">Free for life</div>
                 <div class="pricing__item">
                     <p class="pricing__item-info">1 gb of space</p>
                     <p class="pricing__item-info">1 gb of space</p>
@@ -265,10 +263,10 @@
             </div>
         
         
-            <div class="pricing__column pricing__column__directions-top col-4">
+            <div class="pricing__card pricing__card_top col-4 col-md-12">
                 <div class="pricing__name">Optima</div>
                 <div class="pricing__price">20$</div>
-                <div class="pricing__for">Free for life</div>
+                <div class="pricing__desck">Free for life</div>
                 <div class="pricing__item">
                     <p class="pricing__item-info">1 gb of space</p>
                     <p class="pricing__item-info">1 gb of space</p>
@@ -280,10 +278,10 @@
             </div>
         
         
-            <div class="pricing__column col-4">
+            <div class="pricing__card col-4 col-md-12">
                 <div class="pricing__name">Pro</div>
                 <div class="pricing__price">30$</div>
-                <div class="pricing__for">Free for life</div>
+                <div class="pricing__desck">Free for life</div>
                 <div class="pricing__item">
                     <p class="pricing__item-info">1 gb of space</p>
                     <p class="pricing__item-info">1 gb of space</p>
@@ -295,16 +293,16 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
 <!-- CUSTOMERS -->
-<section class="customers">
+ <section class="customers">
     <div class="container">
         <div class="customers__head section-head">
             <div class="section-head__title">what our customers are saying</div>
             <div class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div>
         <div class="row">
-            <div class="customers__column col-4">
+            <div class="customers__card col-4 col-md-12">
             <div class="customers__text-info">Lorem ipsum dolor sit amet, 
                 consectetur adipisicing elit. Doloribus 
                 accusamus expedita repellat similique 
@@ -320,7 +318,7 @@
                     </div>
                 </div>
             </div>
-            <div class="customers__column col-4">
+            <div class="customers__card col-4 col-md-12">
             <div class="customers__text-info">Lorem ipsum dolor sit amet, 
                 consectetur adipisicing elit. Doloribus 
                 accusamus expedita repellat similique 
@@ -336,7 +334,7 @@
                     </div>
                 </div>
             </div>
-                <div class="customers__column col-4">
+                <div class="customers__card col-4 col-md-12">
             <div class="customers__text-info">Lorem ipsum dolor sit amet, 
                 consectetur adipisicing elit. Doloribus 
                 accusamus expedita repellat similique 
@@ -358,48 +356,71 @@
 
         <!-- PROMO -->
 
-    <section class="promo">
+     <section class="stylish">
         <div class="container">
-            <div class="section-head section-head_light">
+            <div class="stylish__head section-head_light">
             <h1 class="section-head__title">STYLISH AXURE DESIGN</h1>
             <p class="section-head__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
-        </div>
-            <a class="promo-link outlined-btn" href="/download">Download</a>
+           </div>
+            <button class="stylish__link outlined-btn" href="/download">Download</button>
         </div>
     </section> 
 
     <!-- CONTACT-US -->
 
-<section class="contact-us">
+ <section class="contact-us">
     <div class="container">
-        <div class="contcat-us__head section-head">
+        <div class="contact-us__head section-head">
             <div class="section-head__title">contact us</div>
             <div class="section-head__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div>
 
-    <div class="row">
-<div class="contact-us__card-column col-6">
+    <div class="contact__row row">
+<div class="contact-us__card col-6 col-md-12">
     <div class="contact-us__card-info">
-    <input class="contact-us__card-item" type="text" name="userName" placeholder="Name">
-    <input class="contact-us__card-item" type="email" name="userEmail" placeholder="Email">
-    <input class="contact-us__card-item" type="password" name="userPassword" placeholder="Password">
+    <input class="contact-us__card-item form-input " type="text" name="userName" placeholder="Name">
+    <input class="contact-us__card-item form-input" type="email" name="userEmail" placeholder="Email">
+    <input class="contact-us__card-item form-input" type="password" name="userPassword" placeholder="Password">
 </div>
 </div>
-<div class="contact-us__card-column col-6">
+<div class="contact-us__card col-6 col-md-12">
     <div class="contact-us__card-message">
 <textarea class=" contact-us__card-text" name="userText" id="#" placeholder="Message" cols="55" rows="8"></textarea>
 </div>
 </div>
     </div>
 <div class="contact-us__send">
-    <a href="" class="contact-us__send-link prime-btn">Send Message</a>
+    <button href="" class="contact-us__btn prime-btn">Send Message</button>
 </div>
 </div>
-</section>
+</section> 
 
 <!-- FOOTER -->
 
-<section class="footer">
+
+ <form id="myModal" class="modal">
+    <div class="modal-content form">
+        <span class="close">&times;</span>
+        <fieldset class="modal__form form-group">
+            <legend class="modal__form-title form-title">Registration:</legend>
+            <div class="modal__form-items form-items">
+                <input class="modal__form-input form-input form-input" type="email" name="userEmail" placeholder="Email">
+            </div>
+            <div class="modal__form-items form-items">
+                <input class="modal__form-input form-input form-input"  type="text" name="userName" placeholder="Name">
+            </div>
+            <div class="modal__form-items form-items">
+                <input class="modal__form-input form-input form-input" type="phone" name="userPhone" placeholder="phone">
+            </div>
+        
+            
+            <button class="modal__form-btn prime-btn" type="submit">Get</button>
+        </fieldset>
+    </div>
+</form> 
+
+
+  <section class="footer">
     <div class="container">
         <nav class="footer__nav">
             <ul class="footer__icon">
