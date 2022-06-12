@@ -401,7 +401,7 @@ span {
 /* promo */
 .promo {
 
-    background-image: url(/assets/img/header/back.png);
+    background-image: url(/assets/img/header/imageback.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1095,7 +1095,7 @@ span {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    background-image: url("/assets/img/image.png");
+    background-image: url("");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
